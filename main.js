@@ -35470,7 +35470,7 @@ angular
             
             .state('home', {
               url: '/home',
-              templateUrl: './BWPestsolutions/views/home.html',
+              templateUrl: '/views/home.html',
             });
 
       // $locationProvider.html5Mode(true); 
@@ -35484,7 +35484,7 @@ function header() {
     return {
 		restrict: 'E',
 		transclude: true,
-		templateUrl: './BWPestsolutions/views/header.html',
+		templateUrl: '/views/header.html',
 		controller: 'HeaderController as vm'
 	};
 }
