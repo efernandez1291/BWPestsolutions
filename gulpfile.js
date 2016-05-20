@@ -8,7 +8,8 @@ var gulp = require('gulp'),
 	bulkSass = require('gulp-sass-bulk-import'),
 	connect = require('gulp-connect'),
 	ghPages = require('gulp-gh-pages'),
-	concat = require('gulp-concat');
+	concat = require('gulp-concat'),
+	ghPages = require('gulp-gh-pages');
 
 var sources = {
   	sass: [
@@ -101,6 +102,11 @@ gulp.task('connect', function(){
 		livereload: true,
 		port:3030
 	});
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('watch', function(){

@@ -24,6 +24,7 @@
     "gulp-sourcemaps":"latest",
     "gulp-rename":"latest",
     "gulp-sass-bulk-import": "latest",
-    "gulp-concat":"latest"
+    "gulp-concat":"latest",
+    "gulp-gh-pages":"latest"
   }
 }
