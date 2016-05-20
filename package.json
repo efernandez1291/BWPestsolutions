@@ -1,0 +1,29 @@
+{
+  "name": "BWPestsolutions",
+  "version": "0.1.0",
+  "description": "Exterminators in the greater Washington D.C./Baltimore area.",
+  "author": { 
+    "name" : "Eduardo Fernandez",
+    "email" : "efernandez1291@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://https://github.com/efernandez1291/BWPestsolutions"
+  },
+  "dependencies": {
+    "normalize.css": "^4.1.1",
+    "angular": "^1.5.5",
+    "angular-ui-router": "^0.3.0"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-connect": "latest",
+    "gulp-gh-pages": "latest",
+    "gulp-sass": "latest",
+    "gulp-clean-css":"latest",
+    "gulp-sourcemaps":"latest",
+    "gulp-rename":"latest",
+    "gulp-sass-bulk-import": "latest",
+    "gulp-concat":"latest"
+  }
+}

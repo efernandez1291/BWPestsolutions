@@ -1,2 +1,6 @@
-# BWPestsolutions
-BW Pest Solutions sandbox
+#BWPestsolutions
+
+##BW Pest Solutions sandbox
+
+npm install
+npm start 
