@@ -35441,6 +35441,7 @@ angular.module('ui.router.state')
   .filter('isState', $IsStateFilter)
   .filter('includedByState', $IncludedByStateFilter);
 })(window, window.angular);
+(function() {
 
 'use strict';
 
@@ -35452,13 +35453,31 @@ angular
 	]
 );
 
+})();
+(function() {
+
+'use strict';
+
 angular
     .module('BWPestSolutions.header', []
 );
 
+})();
+
+
+(function() {
+
+'use strict';
+
 angular
     .module('BWPestSolutions.home', []
 );
+
+})();
+
+(function() {
+
+'use strict';
 
 angular
     .module('BWPestSolutions.home')
@@ -35476,6 +35495,13 @@ angular
       // $locationProvider.html5Mode(true); 
 
     });
+
+})();
+(function() {
+
+'use strict';
+
+
 angular
     .module('BWPestSolutions.header')
     .directive('header', header);
@@ -35489,6 +35515,12 @@ function header() {
 	};
 }
 
+})();
+
+(function() {
+
+'use strict';
+
 angular
     .module('BWPestSolutions.header')
     .controller('HeaderController', HeaderController);
@@ -35498,3 +35530,5 @@ HeaderController.$inject = ['$scope'];
 function HeaderController($scope) {
     var vm = this;
 }
+
+})();
