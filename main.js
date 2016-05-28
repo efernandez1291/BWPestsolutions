@@ -35510,7 +35510,7 @@ function header() {
     return {
 		restrict: 'E',
 		transclude: true,
-		templateUrl: '/views/header.html',
+		templateUrl: './views/header.html',
 		controller: 'HeaderController as vm'
 	};
 }
