@@ -35449,11 +35449,35 @@ angular
     .module('BWPestSolutions', [
 		'ui.router',
 		'BWPestSolutions.header',
-		'BWPestSolutions.home'
+		'BWPestSolutions.home',
+		'BWPestSolutions.contactForm',
+		'BWPestSolutions.footer'
 	]
 );
 
 })();
+(function() {
+
+'use strict';
+
+angular
+    .module('BWPestSolutions.contactForm', []
+);
+
+})();
+
+
+(function() {
+
+'use strict';
+
+angular
+    .module('BWPestSolutions.footer', []
+);
+
+})();
+
+
 (function() {
 
 'use strict';
@@ -35503,16 +35527,85 @@ angular
 
 
 angular
+    .module('BWPestSolutions.contactForm')
+    .directive('contactForm', contactForm);
+
+function contactForm() {
+    return {
+		restrict: 'EA',
+		transclude: true,
+		templateUrl: './views/contact-form.html',
+		controller: 'ContactFormController as vm'
+	};
+}
+
+})();
+
+(function() {
+
+'use strict';
+
+angular
+    .module('BWPestSolutions.footer')
+    .directive('footer', footer);
+
+function footer() {
+    return {
+		restrict: 'A',
+		transclude: true,
+		templateUrl: './views/footer.html',
+		controller: 'FooterController as vm'
+	};
+}
+
+})();
+
+(function() {
+
+'use strict';
+
+angular
     .module('BWPestSolutions.header')
     .directive('header', header);
 
 function header() {
     return {
-		restrict: 'E',
+		restrict: 'A',
 		transclude: true,
 		templateUrl: './views/header.html',
 		controller: 'HeaderController as vm'
 	};
+}
+
+})();
+
+(function() {
+
+'use strict';
+
+angular
+    .module('BWPestSolutions.contactForm')
+    .controller('ContactFormController', ContactFormController);
+
+ContactFormController.$inject = ['$scope'];
+
+function ContactFormController($scope) {
+    var vm = this;
+}
+
+})();
+(function() {
+
+'use strict';
+
+angular
+    .module('BWPestSolutions.footer')
+    .controller('FooterController', FooterController);
+
+FooterController.$inject = ['$scope'];
+
+function FooterController($scope) {
+    var vm = this;
 }
 
 })();
