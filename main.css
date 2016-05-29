@@ -374,7 +374,8 @@ html {
   box-sizing: border-box;
   font-size: 1em;
   line-height: 1.5;
-  color: #051923; }
+  color: #051923;
+  -webkit-font-smoothing: antialiased; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -430,6 +431,7 @@ label {
   font-size: 0.8em;
   text-transform: uppercase; }
 
+a.button,
 button,
 [role=button].oui-button {
   border-radius: 4px;
@@ -444,51 +446,64 @@ button,
   text-decoration: none;
   vertical-align: middle;
   transition: all 75ms ease-in-out; }
+  a.button i,
   button i,
   [role=button].oui-button i {
     font-size: .8em; }
 
+a.button.action,
 button.action,
 [role=button].oui-button.action {
   color: #ffffff;
   background-color: #0582ca;
   border-color: #0582ca; }
+  a.button.action:hover,
+  button.action:hover,
+  [role=button].oui-button.action:hover {
+    text-decoration: none;
+    background-color: #006494; }
+  a.button.action[disabled],
   button.action[disabled],
   [role=button].oui-button.action[disabled] {
     -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
     /* IE 8 */
     opacity: .5; }
-    button.action[disabled]:hover,
-    [role=button].oui-button.action[disabled]:hover {
-      text-decoration: none; }
 
+a.button.regressive,
 button.regressive,
 [role=button].oui-button.regressive {
   color: #ffffff;
   background-color: #8d99ae;
   border-color: #8d99ae; }
+  a.button.regressive:hover,
+  button.regressive:hover,
+  [role=button].oui-button.regressive:hover {
+    text-decoration: none;
+    background-color: #2b2d42; }
+  a.button.regressive[disabled],
   button.regressive[disabled],
   [role=button].oui-button.regressive[disabled] {
     -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
     /* IE 8 */
     opacity: .5; }
-    button.regressive[disabled]:hover,
-    [role=button].oui-button.regressive[disabled]:hover {
-      text-decoration: none; }
 
+a.button.destructive,
 button.destructive,
 [role=button].oui-button.destructive {
   color: #ffffff;
   background-color: #ef233c;
   border-color: #ef233c; }
+  a.button.destructive:hover,
+  button.destructive:hover,
+  [role=button].oui-button.destructive:hover {
+    text-decoration: none;
+    background-color: #d90429; }
+  a.button.destructive[disabled],
   button.destructive[disabled],
   [role=button].oui-button.destructive[disabled] {
     -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
     /* IE 8 */
     opacity: .5; }
-    button.destructive[disabled]:hover,
-    [role=button].oui-button.destructive[disabled]:hover {
-      text-decoration: none; }
 
 select, textarea, input {
   background-color: #ffffff;
@@ -598,6 +613,46 @@ select:focus, select:active {
     padding: 1.2em;
     border-radius: .4em;
     background-color: rgba(43, 45, 66, 0.7); }
+
+.footer {
+  background-color: #003554;
+  padding: 0.5em;
+  border-top-color: #d90429;
+  border-left-color: #051923;
+  border-right-color: #051923;
+  border-bottom-color: #006494;
+  border-style: solid;
+  border-width: .4em .4em .4em .4em;
+  position: fixed;
+  width: 100%;
+  bottom: 0; }
+  .footer .footer-container .button .button-icon {
+    height: 1.1em;
+    color: white;
+    vertical-align: bottom;
+    margin-right: 0.5em; }
+  .footer .footer-container .footer-container-buttonbar {
+    display: inline-block;
+    width: 55%; }
+    .footer .footer-container .footer-container-buttonbar .footer-container-email_text .button-icon {
+      height: 0.9em;
+      vertical-align: top;
+      margin-bottom: 0.02em; }
+  .footer .footer-container .footer-container-credentials {
+    width: 44%;
+    display: inline-block;
+    text-align: right; }
+    .footer .footer-container .footer-container-credentials .footer-container-span_text {
+      color: white;
+      font-size: 0.8em; }
+
+@media only screen and (max-width: 40em) {
+  .footer-container-credentials {
+    width: 100% !important;
+    text-align: center !important; }
+  .footer-container-buttonbar {
+    width: 100% !important;
+    text-align: center !important; } }
 
 .header {
   margin-top: 0.35em; }
