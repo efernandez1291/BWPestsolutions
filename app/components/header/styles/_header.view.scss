@@ -1,4 +1,4 @@
-header {
+.header {
 	margin-top: 0.35em;
 }
 
@@ -61,6 +61,30 @@ nav {
 
 		li {
 			margin-top: 3%;
+			font-size: 1.1em;
+		}
+	}
+
+}
+
+@media #{$xlarge-up} { 
+
+	nav {
+
+		li {
+			font-size: 1.3em;
+		}
+	}
+
+}
+
+@media #{$xxlarge-up} { 
+
+	nav {
+
+		li {
+			margin-top: 3.6%;
+			font-size: 1.4em;
 		}
 	}
 

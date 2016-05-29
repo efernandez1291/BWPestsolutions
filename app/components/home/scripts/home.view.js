@@ -1,8 +1,12 @@
+(function() {
+
+'use strict';
+
 angular
     .module('BWPestSolutions.home')
     .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
-      $urlRouterProvider.otherwise('/home');
+      $urlRouterProvider.otherwise('home');
         
       $stateProvider
             
@@ -14,3 +18,5 @@ angular
       // $locationProvider.html5Mode(true); 
 
     });
+
+})();

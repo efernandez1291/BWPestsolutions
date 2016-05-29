@@ -1,0 +1,61 @@
+.footer {
+	background-color:$dark-blue;
+	padding:0.5em;
+	border-top-color:$dark-red;
+	border-left-color:$darkest-blue;
+	border-right-color:$darkest-blue;
+	border-bottom-color:$blue;
+	border-style: solid;
+    border-width: .4em .4em .4em .4em;
+
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    .footer-container {
+    	.button{
+    		.button-icon{
+    			height: 1.1em;
+    			color: white;
+    			vertical-align: bottom;
+    			margin-right: 0.5em;
+    		}
+    	}
+
+    	.footer-container-buttonbar {
+    		display: inline-block;
+    		width: 55%;
+	    	.footer-container-email_text {
+	    		.button-icon{
+	    			height: 0.9em;
+	    			vertical-align: top;
+
+	    			//TODO FIX THIS BOLOGNIA
+	    			margin-bottom: 0.02em;
+	    		}
+	    	}
+	    }
+
+    	.footer-container-credentials {
+    		width: 44%;
+    		display: inline-block;
+    		text-align: right;
+    		.footer-container-span_text {
+    			color: white;
+    			font-size: 0.8em;
+    		}
+    	}
+    }
+}
+
+@media #{$small-only} { 
+
+	.footer-container-credentials {
+			width: 100% !important; 
+    		text-align: center !important;
+    	}
+    .footer-container-buttonbar {
+    		width: 100% !important;
+    		text-align: center !important;
+	    }
+}
