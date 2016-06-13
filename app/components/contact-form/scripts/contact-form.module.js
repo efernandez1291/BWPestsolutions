@@ -3,8 +3,7 @@
 'use strict';
 
 angular
-    .module('BWPestSolutions.contactForm', []
-);
+    .module('BWPestSolutions.contactForm', []);
 
 })();
 

@@ -17,3 +17,22 @@
 	    background-color: rgba(43, 45, 66, 0.7)
     }
 }
+
+@media #{$xsmall-only} { 
+
+    .form-container {
+        width: 100% !important;
+        border-radius: 0 !important;
+        padding: .5em !important;
+    }
+
+}
+
+@media #{$small-only} { 
+
+    .form-container {
+        width: 100% !important;
+        border-radius: 0 !important;
+    }
+
+}

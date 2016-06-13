@@ -3,8 +3,7 @@
 'use strict';
 
 angular
-    .module('BWPestSolutions.footer', []
-);
+    .module('BWPestSolutions.footer', []);
 
 })();
 

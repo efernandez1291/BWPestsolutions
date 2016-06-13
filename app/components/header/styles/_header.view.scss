@@ -16,6 +16,22 @@ nav {
 	}
 }
 
+@media #{$xsmall-only} { 
+
+	#logo {
+		width:100%;
+		display: block;
+	}
+
+	nav {
+		li {
+			font-size: 0.9em;
+			width: calc(95.8% / 4) !important;
+		}
+	}
+
+}
+
 @media #{$small-only} { 
 
 	#logo {

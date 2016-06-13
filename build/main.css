@@ -364,6 +364,7 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+/* 0, 320px */
 /* 0, 640px */
 /* 641px, 1024px */
 /* 1025px, 1440px */
@@ -614,6 +615,17 @@ select:focus, select:active {
     border-radius: .4em;
     background-color: rgba(43, 45, 66, 0.7); }
 
+@media only screen and (max-width: 25em) {
+  .form-container {
+    width: 100% !important;
+    border-radius: 0 !important;
+    padding: .5em !important; } }
+
+@media only screen and (max-width: 40em) {
+  .form-container {
+    width: 100% !important;
+    border-radius: 0 !important; } }
+
 .footer {
   background-color: #003554;
   padding: 0.5em;
@@ -635,9 +647,9 @@ select:focus, select:active {
     display: inline-block;
     width: 55%; }
     .footer .footer-container .footer-container-buttonbar .footer-container-email_text .button-icon {
-      height: 0.9em;
+      height: 1em;
       vertical-align: top;
-      margin-bottom: 0.02em; }
+      margin-bottom: 0.1em; }
   .footer .footer-container .footer-container-credentials {
     width: 44%;
     display: inline-block;
@@ -664,6 +676,14 @@ nav ul {
     display: inline-block;
     width: calc(96.5% / 4);
     text-align: center; }
+
+@media only screen and (max-width: 25em) {
+  #logo {
+    width: 100%;
+    display: block; }
+  nav li {
+    font-size: 0.9em;
+    width: calc(95.8% / 4) !important; } }
 
 @media only screen and (max-width: 40em) {
   #logo {

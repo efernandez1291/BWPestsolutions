@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="25px" height="11px" viewBox="0 0 25 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
-    <title>Group</title>
+    <title>Shape</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" stroke="#FFFFFF">
-            <path d="M20.584,9 C20.252,9.828 19.312,10.5 18.484,10.5 L6.484,10.5 C5.655,10.5 5.252,9.828 5.584,9 L8.384,2 C8.716,1.172 9.656,0.5 10.485,0.5 L22.485,0.5 C23.313,0.5 23.716,1.172 23.384,2 L20.584,9 L20.584,9 Z M21.184,2.5 L14.084,6.5 L10.184,2.5 L21.184,2.5 Z M7.584,9 L11.084,6.5 L7.584,9 Z M18.584,9 L17.084,6.5 L18.584,9 Z M5.5,0.5 L0.5,0.5 L5.5,0.5 Z M2.5,9.5 L0.5,9.5 L2.5,9.5 Z M3.5,4.5 L0.5,4.5 L3.5,4.5 Z" id="Shape"></path>
+        <g id="Group" transform="translate(-133.000000, -52.000000)" stroke="#FFFFFF">
+            <path d="M156.5,66 C156.5,66.828 155.828,67.5 155,67.5 L135,67.5 C134.172,67.5 133.5,66.828 133.5,66 L133.5,54 C133.5,53.172 134.172,52.5 135,52.5 L155,52.5 C155.828,52.5 156.5,53.172 156.5,54 L156.5,66 L156.5,66 Z M153.5,56.5 L145,62 L136.5,56.5 L153.5,56.5 Z M136.5,64 L140,62 L136.5,64 Z M153.5,64 L150,62 L153.5,64 Z" id="Shape"></path>
         </g>
     </g>
 </svg>
