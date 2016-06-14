@@ -35451,7 +35451,9 @@ angular
 		'BWPestSolutions.header',
 		'BWPestSolutions.home',
 		'BWPestSolutions.contactForm',
-		'BWPestSolutions.footer'
+		'BWPestSolutions.footer',
+		'BWPestSolutions.residential',
+		'BWPestSolutions.walkthroughGenerator'
 	]
 );
 
@@ -35461,8 +35463,7 @@ angular
 'use strict';
 
 angular
-    .module('BWPestSolutions.contactForm', []
-);
+    .module('BWPestSolutions.contactForm', []);
 
 })();
 
@@ -35472,8 +35473,7 @@ angular
 'use strict';
 
 angular
-    .module('BWPestSolutions.footer', []
-);
+    .module('BWPestSolutions.footer', []);
 
 })();
 
@@ -35483,8 +35483,7 @@ angular
 'use strict';
 
 angular
-    .module('BWPestSolutions.header', []
-);
+    .module('BWPestSolutions.header', []);
 
 })();
 
@@ -35494,10 +35493,28 @@ angular
 'use strict';
 
 angular
-    .module('BWPestSolutions.home', []
-);
+    .module('BWPestSolutions.home', []);
 
 })();
+
+(function() {
+
+'use strict';
+
+angular
+    .module('BWPestSolutions.residential', []);
+
+})();
+
+(function() {
+
+'use strict';
+
+angular
+    .module('BWPestSolutions.walkthroughGenerator', []);
+
+})();
+
 
 (function() {
 
@@ -35517,6 +35534,24 @@ angular
             });
 
       // $locationProvider.html5Mode(true); 
+
+    });
+
+})();
+(function() {
+
+'use strict';
+
+angular
+    .module('BWPestSolutions.residential')
+    .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+        
+      $stateProvider
+            
+            .state('residential', {
+              url: '/residential',
+              templateUrl: './views/residential.html',
+            });
 
     });
 
@@ -35584,6 +35619,25 @@ function header() {
 'use strict';
 
 angular
+    .module('BWPestSolutions.walkthroughGenerator')
+    .directive('walkthroughGenerator', walkthroughGenerator);
+
+function walkthroughGenerator() {
+    return {
+		restrict: 'A',
+		transclude: true,
+		templateUrl: './views/walkthrough-generator.html',
+		controller: 'WalkthroughGeneratorController as vm'
+	};
+}
+
+})();
+
+(function() {
+
+'use strict';
+
+angular
     .module('BWPestSolutions.contactForm')
     .controller('ContactFormController', ContactFormController);
 
@@ -35621,6 +35675,22 @@ angular
 HeaderController.$inject = ['$scope'];
 
 function HeaderController($scope) {
+    var vm = this;
+}
+
+})();
+
+(function() {
+
+'use strict';
+
+angular
+    .module('BWPestSolutions.walkthroughGenerator')
+    .controller('WalkthroughGeneratorController', WalkthroughGeneratorController);
+
+WalkthroughGeneratorController.$inject = ['$scope'];
+
+function WalkthroughGeneratorController($scope) {
     var vm = this;
 }
 
