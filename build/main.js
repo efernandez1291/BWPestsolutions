@@ -35627,7 +35627,7 @@ function walkthroughGenerator() {
 		restrict: 'A',
 		transclude: true,
 		templateUrl: './views/walkthrough-generator.html',
-		controller: 'walkthroughGeneratorController as vm'
+		controller: 'WalkthroughGeneratorController as vm'
 	};
 }
 

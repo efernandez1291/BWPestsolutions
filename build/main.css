@@ -599,7 +599,7 @@ select:focus, select:active {
   outline: 0; }
 
 .contact-form {
-  background-image: url("./images/wasp.png");
+  background-image: url("./images/wasp.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
@@ -668,72 +668,65 @@ select:focus, select:active {
 
 .header {
   margin-top: 0.35em; }
-
-nav ul {
-  margin: 0;
-  padding: 0; }
-  nav ul li {
-    display: inline-block;
-    width: calc(96.5% / 4);
-    text-align: center; }
+  .header .logo {
+    cursor: pointer; }
+  .header .nav ul {
+    margin: 0;
+    padding: 0; }
+    .header .nav ul li {
+      display: inline-block;
+      width: calc(96.5% / 4);
+      text-align: center; }
 
 @media only screen and (max-width: 25em) {
-  #logo {
+  .logo {
     width: 100%;
     display: block; }
-  nav li {
+  .nav li {
     font-size: 0.9em;
     width: calc(95.8% / 4) !important; } }
 
 @media only screen and (max-width: 40em) {
-  #logo {
+  .logo {
     width: 100%;
     display: block; }
-  nav li {
+  .nav li {
     margin: 1.5% 0; } }
 
 @media only screen and (min-width: 40em) and (max-width: 64em) {
-  #logo {
+  .logo {
     width: 100%;
     display: block; }
-  nav li {
+  .nav li {
     margin: 1.5% 0;
     font-size: 1.2em; } }
 
 @media only screen and (min-width: 64em) {
-  #logo {
+  .logo {
     width: 49%;
     display: inline-block; }
-  nav {
+  .nav {
     width: 50%;
     display: inline-block;
     vertical-align: top; }
-    nav li {
+    .nav li {
       margin-top: 3%;
       font-size: 1.1em; } }
 
 @media only screen and (min-width: 90em) {
-  nav li {
+  .nav li {
     font-size: 1.3em; } }
 
 @media only screen and (min-width: 120em) {
-  nav li {
+  .nav li {
     margin-top: 3.6%;
     font-size: 1.4em; } }
 
-.contact-form {
-  background-image: url("./images/wasp.png");
+.residential-banner {
+  background-image: url("./images/houses.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
-  background-position-x: right;
   width: 100%;
-  height: 32em;
-  padding-top: 1.7em;
+  height: 40em;
   color: white; }
-  .contact-form .form-container {
-    margin: 0 auto;
-    width: 24em;
-    padding: 1.2em;
-    border-radius: .4em;
-    background-color: rgba(43, 45, 66, 0.7); }
