@@ -378,6 +378,9 @@ html {
   color: #051923;
   -webkit-font-smoothing: antialiased; }
 
+.main {
+  margin-bottom: 4.3em; }
+
 *, *:before, *:after {
   box-sizing: inherit; }
 
@@ -615,11 +618,12 @@ select:focus, select:active {
     border-radius: .4em;
     background-color: rgba(43, 45, 66, 0.7); }
 
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 22em) {
   .form-container {
     width: 100% !important;
     border-radius: 0 !important;
-    padding: .5em !important; } }
+    padding: .5em !important;
+    font-size: 0.93em; } }
 
 @media only screen and (max-width: 40em) {
   .form-container {
@@ -666,6 +670,11 @@ select:focus, select:active {
     width: 100% !important;
     text-align: center !important; } }
 
+@media only screen and (max-width: 22em) {
+  .footer-container-buttonbar .footer-container-email_text,
+  .footer-container-buttonbar .footer-container-phone-number_text {
+    font-size: 0.9em; } }
+
 .header {
   margin-top: 0.35em; }
   .header .logo {
@@ -678,7 +687,7 @@ select:focus, select:active {
       width: calc(96.5% / 4);
       text-align: center; }
 
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 22em) {
   .logo {
     width: 100%;
     display: block; }
