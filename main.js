@@ -35450,6 +35450,7 @@ angular
 		'ui.router',
 		'BWPestSolutions.header',
 		'BWPestSolutions.home',
+		'BWPestSolutions.aboutUs',
 		'BWPestSolutions.contactForm',
 		'BWPestSolutions.footer',
 		'BWPestSolutions.residential',
@@ -35458,6 +35459,16 @@ angular
 );
 
 })();
+(function() {
+
+'use strict';
+
+angular
+    .module('BWPestSolutions.aboutUs', []);
+
+})();
+
+
 (function() {
 
 'use strict';
@@ -35556,6 +35567,25 @@ angular
     });
 
 })();
+(function() {
+
+'use strict';
+
+
+angular
+    .module('BWPestSolutions.aboutUs')
+    .directive('aboutUs', aboutUs);
+
+function aboutUs() {
+    return {
+		restrict: 'A',
+		transclude: true,
+		templateUrl: './views/about-us.html',
+	};
+}
+
+})();
+
 (function() {
 
 'use strict';

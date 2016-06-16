@@ -601,6 +601,47 @@ select:focus, select:active {
   border-color: #019ED5;
   outline: 0; }
 
+.about-us {
+  padding: 1em 1em 0;
+  color: #003554; }
+
+.about-us__row {
+  margin: 0 0 1.5em; }
+  .about-us__row .about-us__heading {
+    margin-bottom: 0.5em; }
+  .about-us__row .about-us__text {
+    padding: 0 1em;
+    margin: 0;
+    font-size: 1.2em;
+    color: #006494; }
+  .about-us__row .about-us__tile {
+    width: 47.5%;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    background-color: #003554;
+    padding: 1em;
+    margin: 1%;
+    min-height: 9em;
+    border-radius: 0.4em; }
+    .about-us__row .about-us__tile .tile__heading {
+      text-align: center; }
+    .about-us__row .about-us__tile .tile__text {
+      padding: 0 1em;
+      margin-top: 0.3em; }
+    .about-us__row .about-us__tile .tile__image {
+      width: 50%;
+      margin: 0 auto 1em;
+      display: block;
+      border-radius: 100%;
+      border: 2px solid white; }
+
+@media only screen and (max-width: 40em) {
+  .about-us__tile {
+    width: 98% !important; }
+    .about-us__tile .tile__image {
+      width: 70% !important; } }
+
 .contact-form {
   background-image: url("./images/wasp.jpg");
   background-size: cover;
@@ -670,6 +711,11 @@ select:focus, select:active {
     width: 100% !important;
     text-align: center !important; } }
 
+@media only screen and (max-width: 40em) and (orientation: landscape) {
+  .footer-container-buttonbar .footer-container-email_text,
+  .footer-container-buttonbar .footer-container-phone-number_text {
+    font-size: 0.8em; } }
+
 @media only screen and (max-width: 22em) {
   .footer-container-buttonbar .footer-container-email_text,
   .footer-container-buttonbar .footer-container-phone-number_text {
@@ -677,6 +723,8 @@ select:focus, select:active {
 
 .header {
   margin-top: 0.35em; }
+  .header .home-link {
+    text-decoration: none; }
   .header .logo {
     cursor: pointer; }
   .header .nav ul {
@@ -684,7 +732,7 @@ select:focus, select:active {
     padding: 0; }
     .header .nav ul li {
       display: inline-block;
-      width: calc(96.5% / 4);
+      width: calc(96.2% / 4);
       text-align: center; }
 
 @media only screen and (max-width: 22em) {
