@@ -11,7 +11,7 @@ angular
 		'BWPestSolutions.contactForm',
 		'BWPestSolutions.footer',
 		'BWPestSolutions.residential',
-		'BWPestSolutions.walkthroughGenerator'
+		'BWPestSolutions.pestIdentifier'
 	]
 );
 

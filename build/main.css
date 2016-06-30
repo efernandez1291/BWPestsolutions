@@ -682,7 +682,7 @@ select:focus, select:active {
   background-position-y: bottom;
   background-position-x: right;
   width: 100%;
-  padding: 7em 0;
+  padding: 3em 0;
   color: white; }
   .contact-form .form-container {
     margin: 0 auto;
@@ -809,6 +809,58 @@ select:focus, select:active {
   .nav li {
     margin-top: 3.6%;
     font-size: 1.4em; } }
+
+.pest-identifier {
+  padding: 3em 0;
+  background-image: url("./images/houses.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom; }
+  .pest-identifier .picker-heading {
+    text-align: center;
+    margin-bottom: 1em;
+    color: white; }
+  .pest-identifier .pest-picker {
+    margin: 0 auto;
+    max-width: 70em; }
+    .pest-identifier .pest-picker .pest {
+      display: inline-block;
+      width: 49.5%;
+      background: -moz-linear-gradient(top, #edf2f4 0%, #8d99ae 60%, black 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #edf2f4 0%, #8d99ae 60%, black 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #edf2f4 0%, #8d99ae 60%, black 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-grey', endColorstr='$dark-grey',GradientType=0 );
+      /* IE6-9 */
+      margin-bottom: 0.5%;
+      vertical-align: top;
+      cursor: pointer;
+      border-radius: 0.4em;
+      box-shadow: 0.2em 0.2em 1em #2b2d42;
+      text-decoration: none; }
+      .pest-identifier .pest-picker .pest:hover {
+        background: -moz-linear-gradient(top, #2b2d42 0%, #8d99ae 60%, #edf2f4 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #2b2d42 0%, #8d99ae 60%, #edf2f4 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #2b2d42 0%, #8d99ae 60%, #edf2f4 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-grey', endColorstr='$dark-grey',GradientType=0 );
+        /* IE6-9 */ }
+        .pest-identifier .pest-picker .pest:hover .pest-type {
+          color: white; }
+      .pest-identifier .pest-picker .pest .pest-type {
+        text-align: center;
+        color: #003554;
+        line-height: 1.8em; }
+      .pest-identifier .pest-picker .pest .pest-image {
+        width: 100%; }
+
+@media only screen and (min-width: 64em) {
+  .pest {
+    width: 32.6% !important; } }
 
 .residential-banner {
   background-image: url("./images/houses.jpg");
