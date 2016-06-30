@@ -35454,7 +35454,7 @@ angular
 		'BWPestSolutions.contactForm',
 		'BWPestSolutions.footer',
 		'BWPestSolutions.residential',
-		'BWPestSolutions.walkthroughGenerator'
+		'BWPestSolutions.pestIdentifier'
 	]
 );
 
@@ -35513,19 +35513,19 @@ angular
 'use strict';
 
 angular
-    .module('BWPestSolutions.residential', []);
+    .module('BWPestSolutions.pestIdentifier', []);
 
 })();
+
 
 (function() {
 
 'use strict';
 
 angular
-    .module('BWPestSolutions.walkthroughGenerator', []);
+    .module('BWPestSolutions.residential', []);
 
 })();
-
 
 (function() {
 
@@ -35649,15 +35649,15 @@ function header() {
 'use strict';
 
 angular
-    .module('BWPestSolutions.walkthroughGenerator')
-    .directive('walkthroughGenerator', walkthroughGenerator);
+    .module('BWPestSolutions.pestIdentifier')
+    .directive('pestIdentifier', pestIdentifier);
 
-function walkthroughGenerator() {
+function pestIdentifier() {
     return {
 		restrict: 'A',
 		transclude: true,
-		templateUrl: './views/walkthrough-generator.html',
-		controller: 'WalkthroughGeneratorController as vm'
+		templateUrl: './views/pest-identifier.html',
+		controller: 'PestIdentifierController as vm'
 	};
 }
 
@@ -35715,12 +35715,12 @@ function HeaderController($scope) {
 'use strict';
 
 angular
-    .module('BWPestSolutions.walkthroughGenerator')
-    .controller('WalkthroughGeneratorController', WalkthroughGeneratorController);
+    .module('BWPestSolutions.pestIdentifier')
+    .controller('PestIdentifierController', PestIdentifierController);
 
-WalkthroughGeneratorController.$inject = ['$scope'];
+PestIdentifierController.$inject = ['$scope'];
 
-function WalkthroughGeneratorController($scope) {
+function PestIdentifierController($scope) {
     var vm = this;
 }
 
