@@ -1,5 +1,5 @@
 .footer {
-	background-color:$dark-blue;
+	background-color:black;
 	padding:0.5em;
 	border-top-color:$dark-red;
 	border-left-color:$darkest-blue;
@@ -56,4 +56,23 @@
     		width: 100% !important;
     		text-align: center !important;
 	    }
+
+    @media #{$landscape} {
+        .footer-container-buttonbar {
+            .footer-container-email_text,
+            .footer-container-phone-number_text {
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+
+@media #{$xsmall-only} { 
+
+    .footer-container-buttonbar {
+            .footer-container-email_text,
+            .footer-container-phone-number_text {
+                font-size: 0.9em;
+            }
+        }
 }

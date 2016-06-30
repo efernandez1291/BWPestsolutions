@@ -1,6 +1,10 @@
 .header {
 	margin-top: 0.35em;
 
+	.home-link {
+		text-decoration: none;
+	}
+
 	.logo {
 		cursor: pointer;
 	}
@@ -13,7 +17,7 @@
 
 			li {
 				display: inline-block;
-				width: calc(96.5% / 4);
+				width: calc(96.2% / 4);
 				text-align: center;
 			}
 		}

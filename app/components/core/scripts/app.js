@@ -7,6 +7,7 @@ angular
 		'ui.router',
 		'BWPestSolutions.header',
 		'BWPestSolutions.home',
+		'BWPestSolutions.aboutUs',
 		'BWPestSolutions.contactForm',
 		'BWPestSolutions.footer',
 		'BWPestSolutions.residential',

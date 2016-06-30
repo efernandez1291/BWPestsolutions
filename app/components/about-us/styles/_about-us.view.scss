@@ -1,0 +1,96 @@
+.about-us {
+	color: $dark-blue;
+	background: -moz-linear-gradient(top, $light-grey 0%, $grey 50%, $dark-grey 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $light-grey 0%, $grey 50%, $dark-grey 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $light-grey 0%, $grey 50%, $dark-grey 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-grey', endColorstr='$light-grey',GradientType=0 ); /* IE6-9 */
+}
+
+.about-us__row--bottom {
+	padding: 2em 0;
+
+	.about-us__heading {
+		margin: 0 auto 0.5em;
+		text-align: center;
+	}
+
+	.about-us__tile-container {
+		max-width: 78em;
+	    margin: 0 auto;
+	
+		.tile-container__tile {
+			width: 47.5%;
+			max-width: 40em;
+			display: inline-block;
+			vertical-align: top;
+			color: white;
+			background: -moz-linear-gradient(top, black 0%, $dark-grey 50%, $grey 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, black 0%, $dark-grey 50%, $grey 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, black 0%, $dark-grey 50%, $grey 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$dark-grey', endColorstr='$light-grey',GradientType=0 ); /* IE6-9 */
+			box-shadow: 0.2em 0.2em 1em $dark-grey;
+			padding: 1em;
+			margin: 0 1% 2%;
+			min-height: 9em;
+
+			.tile__heading {
+				text-align: center;
+			}
+
+			.tile__text {
+				padding: 0 1em;
+				margin-top: 0.3em;
+				font-size: 1.1em;
+			}
+
+			.tile__image {
+				width: 50%;
+				margin: 0 auto 1em;
+				display: block;
+				border-radius: 100%;
+				border: 2px solid white;
+			}
+
+		}
+
+	}
+
+}
+
+.about-us__row--top {
+	padding: 2em 0;
+	background-color: black;
+
+	.about-us__heading {
+		margin: 0 auto 0.2em;
+		color: white;
+		text-align: center;
+	}
+
+	.about-us__list {
+		font-size: 1.3em;
+		padding: 0 0.5em;
+	    margin: 0 auto;
+	    text-align: left;
+		color: white;
+		max-width: 57.5em;
+		padding: 0 2em;
+
+		.list-item {
+			margin: 0.6em 0;
+		}
+	}
+
+}
+	
+@media #{$small-only} { 
+
+	.tile-container__tile {  
+		width: 98% !important;
+
+		.tile__image {
+			width: 70% !important;
+		}
+	}
+
+}

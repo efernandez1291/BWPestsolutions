@@ -27,8 +27,8 @@ $darkest-blue: #051923; //rgba(5, 25, 35, 100)
 }
 
 // Here we define the breakpoints which will become the upper border for each media size.
-$xsmall-range: (0em, 25em); /* 0, 320px */
-$small-range: (25em, 40em); /* 0, 640px */
+$xsmall-range: (0em, 22em); /* 0, 320px */
+$small-range: (22em, 40em); /* 0, 640px */
 $medium-range: (40em, 64em); /* 641px, 1024px */
 $large-range: (64em, 90em); /* 1025px, 1440px */
 $xlarge-range: (90em, 120em); /* 1441px, 1920px */
@@ -74,6 +74,10 @@ html {
   line-height: 1.5;
   color: #051923;
   -webkit-font-smoothing: antialiased; }
+
+.main {
+  margin-bottom: 4em; 
+}
 
 *, *:before, *:after {
   box-sizing: inherit; }
